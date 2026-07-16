@@ -1,0 +1,39 @@
+name: Feature
+description: Propose a new capability or workflow change
+title: "[Feature]: "
+labels: [needs-triage]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What user or business outcome should this produce?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] Observable result"
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Initial risk level
+      options:
+        - "risk:1 — local and easy to reverse"
+        - "risk:2 — integration or workflow impact"
+        - "risk:3 — architecture, security, data, or public contract"
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and constraints

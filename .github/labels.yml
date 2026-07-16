@@ -1,0 +1,27 @@
+- name: needs-triage
+  color: d4c5f9
+  description: Awaiting categorization and verification
+- name: needs-info
+  color: fbca04
+  description: Waiting for missing information
+- name: ready-for-agent
+  color: 0e8a16
+  description: Fully specified and safe for an authorized agent
+- name: ready-for-human
+  color: 1d76db
+  description: Requires a human decision, credential, approval, or manual action
+- name: wontfix
+  color: ffffff
+  description: Intentionally not planned
+- name: risk:1
+  color: 0e8a16
+  description: Local and easy to reverse
+- name: risk:2
+  color: fbca04
+  description: Integration or workflow impact
+- name: risk:3
+  color: b60205
+  description: Architecture, security, data, or public-contract impact
+- name: blocked:gitnexus
+  color: 5319e7
+  description: Mandatory code-intelligence gate is unhealthy

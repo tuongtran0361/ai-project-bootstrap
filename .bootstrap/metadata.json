@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "projectName": "{{PROJECT_NAME}}",
+  "projectSlug": "{{PROJECT_SLUG}}",
+  "primaryProfile": "{{PRIMARY_PROFILE}}",
+  "bootstrapVersion": "{{BOOTSTRAP_VERSION}}",
+  "generatedAt": "Not generated",
+  "manifestDigest": "Not generated",
+  "appliedPlanHash": "Not applied"
+}

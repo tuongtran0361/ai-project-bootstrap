@@ -1,0 +1,39 @@
+name: Production incident
+description: Record an incident, rollback, or emergency hotfix
+title: "[Incident]: "
+labels: [needs-triage, "risk:3"]
+body:
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe affected users, systems, data, and start time.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Detection and evidence
+      description: Link safe alerts, traces, dashboards, logs, and suspected releases.
+    validations:
+      required: true
+  - type: textarea
+    id: containment
+    attributes:
+      label: Containment and rollback
+    validations:
+      required: true
+  - type: dropdown
+    id: breakglass
+    attributes:
+      label: GitNexus break-glass required?
+      options:
+        - "No"
+        - "Yes — waiting creates greater production harm"
+    validations:
+      required: true
+  - type: textarea
+    id: approval
+    attributes:
+      label: Break-glass approval and compensating analysis
+      description: Record approver, timestamp, justification, rollback owner, and follow-up.
