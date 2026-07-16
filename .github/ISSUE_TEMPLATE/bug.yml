@@ -1,0 +1,39 @@
+name: Bug
+description: Report reproducible incorrect behavior
+title: "[Bug]: "
+labels: [needs-triage]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is broken, and who is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add safe logs, screenshots, traces, or revision references. Do not include credentials.
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Initial risk level
+      options:
+        - "risk:1 — local and easy to reverse"
+        - "risk:2 — integration or workflow impact"
+        - "risk:3 — architecture, security, data, or public contract"
+    validations:
+      required: true

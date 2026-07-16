@@ -1,0 +1,13 @@
+.worktrees/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.tmp
+*.zip
+*.exe
+bootstrap-report.json
+bootstrap-report.md
+work/installers/
+work/downloads/

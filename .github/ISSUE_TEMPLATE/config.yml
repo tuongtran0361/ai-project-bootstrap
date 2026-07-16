@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project context
+    url: "{{REPOSITORY_URL}}/blob/main/CONTEXT.md"
+    about: Review the current operating model and source-of-truth policy before filing work.
